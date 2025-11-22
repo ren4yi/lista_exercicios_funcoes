@@ -7,10 +7,18 @@
 
     //ENTRADA
 
+    let baseTriUs = Number(prompt(`informe um valor para a base do triângulo`));
+    let altuTriUs = Number(prompt(`Informe um valor para a altura do triângulo`));
+
 
     //PROCESSAMENTO
 
+    function areaTri(base, altura){
+     return (base * altura) / 2;
+    }
 
     //SAÍDA
 
+   let area = areaTri(baseTriUs, altuTriUs);
+   alert(`A área do triângulo é de ${area}m²`);
 </script>

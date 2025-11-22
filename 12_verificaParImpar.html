@@ -5,11 +5,23 @@
     */
 
     //ENTRADA
-
+ let numeroUs = Number(prompt(`Informe um número para validar se ele é ímpar ou par`));
 
     //PROCESSAMENTO
 
+    function imparPar(numero){
+        if(numero % 2 == 0){
+            return "par";
+        }
+
+        if(numero % 2 != 0){
+            return "ímpar";
+        }
+    }
 
     //SAÍDA
+
+    let resultado = imparPar(numeroUs);
+    alert("o número escolhido por você é:" + " " + resultado);
 
 </script>

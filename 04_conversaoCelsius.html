@@ -7,10 +7,21 @@
 
     //ENTRADA
 
-
+    let temperaturaUs = Number(prompt(`Informe uma temperatura em Fahrenheit`));
+    
     //PROCESSAMENTO
 
+    function conversao(fahr){
+        
+    return ((fahr - 32) * 5 )/9
+
+    }
 
     //SAÍDA
+
+   let temperatura = conversao(temperaturaUs);
+   alert(`a conversão de ${temperaturaUs}°F em Celsius é de ${temperatura.toFixed(1)}°C`);
+
+</script>
 
 </script>

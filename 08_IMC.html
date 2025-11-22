@@ -6,11 +6,19 @@
     */
 
     //ENTRADA
+   let pesoUs = Number(prompt(`Informe seu peso`));
 
+   let altuUs = Number(prompt(`Informe sua altura`));
 
     //PROCESSAMENTO
 
+    function valor (pe, alt){
+        return pe / (alt * alt);
+    }
 
     //SAÍDA
+
+    let imc = valor(pesoUs, altUs);
+    alert(`O valor do seu IMC é de ${imc}`);
 
 </script>
