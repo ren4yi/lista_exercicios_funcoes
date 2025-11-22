@@ -5,11 +5,20 @@
     */
 
     //ENTRADA
-
+    let inteiro = Number(prompt("Informe um número: "));
+    let fatorial = 1;
 
     //PROCESSAMENTO
-
+    function calcFatorial(numero) {
+        for(let i = 1; i <= numero; i++) {
+        fatorial *= i;
+        }
+         return("O fatorial do número " + numero + " é de " + fatorial);
+       
+    }
 
     //SAÍDA
+    let resultado = calcFatorial(inteiro);
+    alert(resultado);
 
 </script>

@@ -7,14 +7,24 @@
     */
 
     //ENTRADA
-
-    let palavraUs = prompt(`Informe uma palavra`);
-    let vogais = 0
+    let palavra = prompt("Informe uma palavra: ");
+    let vogais = 0;
 
     //PROCESSAMENTO
+    function contadorVogais(termo){
+        termo = termo.toLowerCase();
 
-   
+        for (let i = 0; i < termo.length; i++){
+          let pos = termo[i];
+            if (pos == "a" || pos == "e" || pos == "i" || pos == "o" || pos == "u") {
+               vogais++;
+          }
+        }
+        return("A quantidade de vogais que a palavra " + termo +  " tem é de " + vogais);
+    }
 
     //SAÍDA
+    let quantidade = contadorVogais(palavra);
+    alert(quantidade);
 
 </script>
